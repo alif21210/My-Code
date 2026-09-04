@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int a, b;
+    cin >> a >> b;
+
+    int m = max(a, b);
+    int fav = 6 - m + 1;
+
+    int g = __gcd(fav, 6);
+
+    cout << fav / g << "/" << 6 / g << endl;
+
+    return 0;
+}
