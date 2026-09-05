@@ -14,4 +14,6 @@ int main()
     cout << fav / g << "/" << 6 / g << endl;
 
     return 0;
+
+    //alif
 }
