@@ -1,0 +1,48 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int prime(int a)
+{
+    int i;
+
+    for(i=2; i<a; i++)
+    {
+        if(a%i == 0)
+        {
+            return -1;
+        }
+    }
+
+    return a;
+}
+int main()
+{
+    int n,m,i,flag=0;
+    cin>>n>>m;
+
+    for(i=n+1; i<=m; i++)
+    {
+        int r = prime(i);
+        if(r != -1)
+        {
+            if(r == m)
+            {
+                cout<<"YES"<<endl;
+            }
+            else{
+                cout<<"NO"<<endl;
+            }
+
+            flag++;
+            break;
+        }
+       
+    }
+
+    if(flag == 0)
+    {
+        cout<<"NO"<<endl;
+    }
+
+    return 0;
+}
