@@ -1,0 +1,40 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin>> t;
+
+    int aount=0,bount=0;
+
+    while(t--)
+    {
+        int a,b;
+        cin>>a>>b;
+
+        if(a>b)
+        {
+            aount++;
+        }
+        else if(b>a)
+        {
+            bount++;
+        }
+        
+    }
+
+    if(aount > bount)
+    {
+        cout<<"Mishka"<<endl;
+    }
+    else if(bount > aount)
+    {
+        cout<<"Chris"<<endl;
+    }
+    else{
+        cout<<"Friendship is magic!^^"<<endl;
+    }
+
+    return 0;
+}
